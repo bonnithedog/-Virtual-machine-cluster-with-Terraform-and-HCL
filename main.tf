@@ -1,11 +1,7 @@
 #File terraform_azure.tf
 #https://docs.microsoft.com/en-us/azure/developer/terraform/create-linux-virtual-machine-with-infrastructure
 
-#Added provider customized to use with Terraform Cloud
-provider "azurerm" {
-version = "=2.0.0"
-features {}
-}
+
 
 resource "azurerm_resource_group" "test" {
  name     = "acctestrg"
